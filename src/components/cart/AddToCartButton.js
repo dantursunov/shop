@@ -108,8 +108,6 @@ const AddToCart = ( props ) => {
 
 	return (
 		<div>
-	//		{/* Add To Cart Loading*/}
-	//		{addToCartLoading && <p>Adding to Cart...</p>}
 
 			{/*	Check if its an external product then put its external buy link */}
 			{ "ExternalProduct" === product.__typename ? (
