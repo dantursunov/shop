@@ -108,7 +108,6 @@ const AddToCart = ( props ) => {
 
 	return (
 		<div>
-
 			{/*	Check if its an external product then put its external buy link */}
 			{ "ExternalProduct" === product.__typename ? (
 					<a href={ product.externalUrl } target="_blank" className="px-3 py-1 rounded-sm mr-3 text-sm border-solid border border-current inline-block hover:bg-purple-600 hover:text-white hover:border-purple-600">Buy now</a>
@@ -118,6 +117,9 @@ const AddToCart = ( props ) => {
 			{ showViewCart ? (
 				<Link href="/cart"><button className="px-3 py-1 rounded-sm text-sm border-solid border border-current inline-block hover:bg-black hover:text-white hover:border-blue-300">View Cart</button></Link>
 			) : '' }
+
+			{/* Add To Cart Loading*/}
+			{addToCartLoading && <p>Adding to Cart...</p>}
 		</div>
 	);
 };
