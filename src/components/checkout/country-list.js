@@ -27,7 +27,7 @@ const countryList = [
 	{ countryCode: 'AI', countryName: 'Anguilla' },
 	{ countryCode: 'AG', countryName: 'Antigua' },
 	{ countryCode: 'ID', countryName: 'Indonesia' },
-	{ countryCode: 'KAZ', countryName: 'Kazakhstan' },
+	{ countryCode: 'KZ', countryName: 'Kazakhstan' },
 ];
 
 export default countryList;
