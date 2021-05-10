@@ -23,8 +23,6 @@ const CartItemsContainer = () => {
 		notifyOnNetworkStatusChange: true,
 		onCompleted: () => {
 
-			// console.warn( 'completed GET_CART', data );
-
 			// Update cart in the localStorage.
 			const updatedCart = getFormattedCart( data );
 			localStorage.setItem( 'woo-next-cart', JSON.stringify( updatedCart ) );
@@ -168,7 +166,7 @@ const CartItemsContainer = () => {
 									</tbody>
 								</table>
 								<Link href="/checkout">
-									<button className="bg-black text-white px-5 py-3 rounded-sm w-auto xl:w-full">
+									<button className="bg-purple-600 text-white px-5 py-3 rounded-sm w-auto xl:w-full">
 										<span className="woo-next-cart-checkout-txt">Proceed to Checkout</span>
 										<i className="fas fa-long-arrow-alt-right"/>
 									</button>
@@ -184,7 +182,7 @@ const CartItemsContainer = () => {
 				<div className="container mx-auto my-32 px-4 xl:px-0">
 					<h2 className="text-2xl mb-5">No items in the cart</h2>
 					<Link href="/">
-						<button className="bg-black text-white px-5 py-3 rounded-sm">
+						<button className="bg-purple-600 text-white px-5 py-3 rounded-sm">
 							<span className="woo-next-cart-checkout-txt">Add New Products</span>
 							<i className="fas fa-long-arrow-alt-right"/>
 						</button>
