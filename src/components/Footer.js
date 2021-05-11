@@ -4,8 +4,8 @@ const Footer = () => (
 	<div className="footer bg-gray-800 p-6 text-white">
 		<div className="container mx-auto">
 			<div className="footer-text flex-none md:flex items-center justify-between">
-				<p>© Codeytek Academy 2020</p>
-				<p className="text-gray">Learn the latest tech skills</p>
+				<p>© Onzombie 2021</p>
+				<p className="text-gray">Be prepared for any situation</p>
 				<span className="text-gray">Follow on social links to support the work</span>
 			</div>
 			<ul className="social-links mt-8 flex align-center">
