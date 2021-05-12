@@ -9,7 +9,7 @@ const HeroCarousel = ({heroCarousel}) => {
     }
 
     const autoPlay = true;
-    const slideDuration = 2; // in seconds
+    const slideDuration = 10; // in seconds
     const activeIndexRef = useRef( { activeIndex: 0 } );
     const slideRef = useRef( 0 );
     const [ slide, setSlide ] = useState( 0 );
