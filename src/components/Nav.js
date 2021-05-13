@@ -8,7 +8,7 @@ const Nav = () => {
 	const [ isMenuVisible, setMenuVisibility ] = useState(false);
 
 	return (
-		<nav className="bg-red-200 p-4">
+		<nav className="bg-red-300 p-4">
 			<div className="flex items-center justify-between flex-wrap container mx-auto">
 
 				<div className="flex items-center flex-shrink-0 text-black mr-20">
