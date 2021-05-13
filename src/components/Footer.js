@@ -1,7 +1,7 @@
 import {Facebook, Instagram, Twitter, Youtube} from "./icons";
 
 const Footer = () => (
-	<div className="footer bg-gray-800 p-6 text-white">
+	<div className="footer bg-black p-6 text-red-300">
 		<div className="container mx-auto">
 			<div className="footer-text flex-none md:flex items-center justify-between">
 				<p>© Onzombie 2021</p>
