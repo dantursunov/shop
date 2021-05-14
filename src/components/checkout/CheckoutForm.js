@@ -247,7 +247,7 @@ const CheckoutForm = ({countriesData}) => {
                             {/*Payment*/}
                             <PaymentModes input={input} handleOnChange={handleOnChange}/>
                             <div className="woo-next-place-order-btn-wrap mt-5">
-                                <button className="glow-btn px-5 py-3 rounded-sm w-auto xl:w-full"
+                                <button className="glow-btn px-5 rounded-sm w-auto xl:w-full"
                                         type="submit">
                                     Place Order
                                 </button>
