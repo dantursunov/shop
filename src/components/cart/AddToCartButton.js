@@ -8,6 +8,8 @@ import {AppContext} from "../context/AppContext";
 import {getFormattedCart} from "../../functions";
 import GET_CART from "../../queries/get-cart";
 import ADD_TO_CART from "../../mutations/add-to-cart";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AddToCart = (props) => {
 
@@ -60,8 +62,11 @@ const AddToCart = (props) => {
         }
     });
 
+    toast.configure()
+
     const handleAddToCartClick = async () => {
         setRequestError(null);
+        toast("Your Item Has Been Added to Cart!");
         await addToCart();
     };
 
@@ -70,7 +75,7 @@ const AddToCart = (props) => {
             {/*	Check if its an external product then put its external buy link */}
             {"ExternalProduct" === product.__typename ? (
                     <a href={product?.externalUrl ?? '/'} target="_blank"
-                       className="px-3 py-1 rounded-sm mr-3 text-sm border-solid border border-current inline-block hover:bg-purple-600 hover:text-white hover:border-purple-600">
+                       className="px-3 py-1 rounded-sm mr-3 text-sm border-solid border border-current inline-block hover:bg-black hover:text-red-200 hover:border-red-500">
 						Buy now
                     </a>
                 ) :
@@ -79,7 +84,7 @@ const AddToCart = (props) => {
                     onClick={handleAddToCartClick}
                     className={cx(
                         'px-3 py-1 rounded-sm mr-3 text-sm border-solid border border-current',
-                        {'hover:bg-purple-600 hover:text-white hover:border-purple-600': !addToCartLoading},
+                        {'hover:bg-black hover:text-red-200 hover:border-red-500': !addToCartLoading},
                         {'opacity-50 cursor-not-allowed': addToCartLoading}
                     )}
                 >
@@ -89,7 +94,7 @@ const AddToCart = (props) => {
             {showViewCart ? (
                 <Link href="/cart">
                     <button
-                        className="px-3 py-1 rounded-sm text-sm border-solid border border-current inline-block hover:bg-purple-600 hover:text-white hover:border-purple-600">View
+                        className="px-3 py-1 rounded-sm text-sm border-solid border border-current inline-block hover:bg-black hover:text-red-200 hover:border-red-500">View
                         Cart
                     </button>
                 </Link>
