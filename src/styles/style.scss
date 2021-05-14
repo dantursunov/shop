@@ -5,7 +5,11 @@
 }
 
 .header {
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  background: rgb(210, 218, 252);
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
+  padding-top: 90px;
 }
 
 .banner {
@@ -119,6 +123,7 @@
     border-radius: 4px;
   }
 }
+
 .glow-btn {
   cursor: pointer;
   display: inline-block;
@@ -197,4 +202,20 @@
   100% {
       background-position: 0 0;
   }
+}
+
+.nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 75px;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
