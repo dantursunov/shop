@@ -166,10 +166,10 @@ const CartItemsContainer = () => {
 									</tbody>
 								</table>
 								<Link href="/checkout">
-									<button className="bg-purple-600 text-white px-5 py-3 rounded-sm w-auto xl:w-full">
+									<a className="glow-btn">
 										<span className="woo-next-cart-checkout-txt">Proceed to Checkout</span>
 										<i className="fas fa-long-arrow-alt-right"/>
-									</button>
+									</a>
 								</Link>
 							</div>
 						</div>
@@ -182,10 +182,10 @@ const CartItemsContainer = () => {
 				<div className="container mx-auto my-32 px-4 xl:px-0">
 					<h2 className="text-2xl mb-5">No items in the cart</h2>
 					<Link href="/">
-						<button className="bg-purple-600 text-white px-5 py-3 rounded-sm">
+						<a className="glow-btn">
 							<span className="woo-next-cart-checkout-txt">Add New Products</span>
 							<i className="fas fa-long-arrow-alt-right"/>
-						</button>
+						</a>
 					</Link>
 				</div>
 			) }
