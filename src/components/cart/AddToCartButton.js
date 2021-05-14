@@ -66,7 +66,10 @@ const AddToCart = (props) => {
 
     const handleAddToCartClick = async () => {
         setRequestError(null);
-        toast("Your Item Has Been Added to Cart!");
+        toast.dark('Your item has been added to cart!', {
+            position: "bottom-right",
+            autoClose: 1500,
+            });
         await addToCart();
     };
 
