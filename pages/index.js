@@ -1,4 +1,4 @@
-import Layout from "../src/components/layout/Layout";
+import Layout from "../src/components/layout";
 import Product from "../src/components/Product";
 import client from "../src/apollo/client";
 import ParentCategoriesBlock from "../src/components/category/category-block/ParentCategoriesBlock";

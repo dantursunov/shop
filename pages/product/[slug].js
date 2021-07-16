@@ -1,4 +1,4 @@
-import Layout from '../../src/components/layout/Layout';
+import Layout from '../../src/components/layout';
 import { useRouter } from 'next/router';
 import client from "../../src/apollo/client";
 import AddToCartButton from '../../src/components/cart/AddToCartButton';
