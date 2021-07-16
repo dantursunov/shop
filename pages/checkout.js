@@ -1,4 +1,4 @@
-import Layout from "../src/components/Layout";
+import Layout from "../src/components/layout/Layout";
 import CheckoutForm from "../src/components/checkout/CheckoutForm";
 import GET_COUNTRIES from "../src/queries/get-countries";
 import client from "../src/apollo/client";
