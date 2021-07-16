@@ -1,6 +1,6 @@
 import Layout from "../src/components/Layout";
 import Product from "../src/components/Product";
-import client from '../src/components/ApolloClient';
+import client from "../src/apollo/client";
 import ParentCategoriesBlock from "../src/components/category/category-block/ParentCategoriesBlock";
 import PRODUCTS_AND_CATEGORIES_QUERY from "../src/queries/product-and-categories";
 import HeroCarousel from "../src/components/home/hero-carousel";

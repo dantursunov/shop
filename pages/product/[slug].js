@@ -1,6 +1,6 @@
 import Layout from '../../src/components/Layout';
 import { useRouter } from 'next/router';
-import client from '../../src/components/ApolloClient';
+import client from "../../src/apollo/client";
 import AddToCartButton from '../../src/components/cart/AddToCartButton';
 import {PRODUCT_BY_SLUG_QUERY, PRODUCT_SLUGS} from '../../src/queries/product-by-slug';
 import { isEmpty } from 'lodash';

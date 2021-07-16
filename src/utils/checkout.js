@@ -1,4 +1,4 @@
-import client from "../components/ApolloClient";
+import client from "../apollo/client";
 import GET_STATES from "../queries/get-states";
 
 /**

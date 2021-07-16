@@ -1,5 +1,5 @@
 import Layout from "../../src/components/Layout";
-import client from "../../src/components/ApolloClient";
+import client from "../../src/apollo/client";
 import Product from "../../src/components/Product";
 import {PRODUCT_BY_CATEGORY_SLUG, PRODUCT_CATEGORIES_SLUGS} from "../../src/queries/product-by-category";
 import {isEmpty} from "lodash";

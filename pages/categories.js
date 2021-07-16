@@ -1,5 +1,5 @@
 import Layout from "../src/components/Layout";
-import client from '../src/components/ApolloClient';
+import client from "../src/apollo/client";
 import ParentCategoriesBlock from "../src/components/category/category-block/ParentCategoriesBlock";
 import GET_CATEGORIES_QUERY from "../src/queries/get-categories";
 

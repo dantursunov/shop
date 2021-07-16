@@ -1,5 +1,8 @@
 import "../src/styles/style.scss";
 import "../src/styles/main.scss";
+import { ApolloProvider } from '@apollo/client';
+import client from '../src/apollo/client';
+import { AppProvider } from "../src/components/context/AppContext";
 
 import Router from 'next/router';
 import NProgress from 'nprogress';
@@ -10,7 +13,13 @@ Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <AppProvider>
+      <ApolloProvider client={client}>
+        <Component {...pageProps} />
+      </ApolloProvider>
+    </AppProvider>
+  );
 }
 
 export default MyApp
