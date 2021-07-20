@@ -1,5 +1,5 @@
 import "../src/styles/style.scss";
-import "../src/styles/main.scss";
+import "../src/styles/index.scss";
 import { ApolloProvider } from '@apollo/client';
 import client from '../src/apollo/client';
 import { AppProvider } from "../src/components/context/AppContext";

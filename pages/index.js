@@ -2,17 +2,16 @@ import Layout from "../src/components/layout";
 import Product from "../src/components/Product";
 import client from "../src/apollo/client";
 import ParentCategoriesBlock from "../src/components/category/category-block/ParentCategoriesBlock";
-import PRODUCTS_AND_CATEGORIES_QUERY from "../src/queries/product-and-categories";
+import GET_MENUS from '../src/queries/get-menus';
 import HeroCarousel from "../src/components/home/hero-carousel";
 
-export default function Home({ menus }) {
+export default function Home({ data }) {
 
-	const { products, productCategories, heroCarousel } = menus || {};
+	const { products, productCategories, heroCarousel } = data || {};
 
-	// console.warn('menus', menus);
 
 	return (
-		<Layout>
+		<Layout data={data}>
 			{/*Hero Carousel*/}
 			<HeroCarousel heroCarousel={heroCarousel} />
 			{/*Categories*/}
@@ -37,12 +36,12 @@ export default function Home({ menus }) {
 export async function getStaticProps() {
 
 	const { data } = await client.query({
-		query: PRODUCTS_AND_CATEGORIES_QUERY,
+		query: GET_MENUS,
 	});
 
 	return {
 		props: {
-			menus: {
+			data: {
 				headerMenus: data?.headerMenus?.edges,
 				footerMenus: data?.footerMenus?.edges,
 				productCategories: data?.productCategories?.nodes ? data.productCategories.nodes : [],
