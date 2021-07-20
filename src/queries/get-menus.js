@@ -116,10 +116,9 @@ footer: getFooter {
 }
 `
 
-const GET_MENUS = gql`query {
+export const GET_MENUS = gql`
+query GET_MENUS {
   ${HeaderFooter}
 }
   ${MenuFragment}
 `
-
-export default GET_MENUS;
